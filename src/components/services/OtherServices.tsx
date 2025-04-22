@@ -1,14 +1,11 @@
-
 import React from 'react';
 import { Wrench } from 'lucide-react';
-
 const OtherServices = () => {
-  return (
-    <section className="section bg-brand-lightGray">
-      <div className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-black">Outros Serviços</h2>
-          <p className="text-lg text-black max-w-2xl mx-auto">
+  return <section className="section bg-brand-lightGray bg-slate-50">
+      <div className="container-custom bg-slate-50">
+        <div className="text-center mb-12 bg-brand-orange">
+          <h2 className="text-3xl font-bold mb-4 text-slate-50">Outros Serviços</h2>
+          <p className="max-w-2xl mx-auto text-lg text-slate-50 font-normal">
             Além dos serviços principais de desentupimento, também oferecemos:
           </p>
         </div>
@@ -39,8 +36,6 @@ const OtherServices = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default OtherServices;
