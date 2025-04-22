@@ -1,7 +1,6 @@
 
 import React from 'react';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import { LucideIcon } from 'lucide-react';
 
 interface ServiceSectionProps {
   id: string;
@@ -10,6 +9,7 @@ interface ServiceSectionProps {
   features: string[];
   actionText: string;
   icon: React.ReactNode;
+  image?: string;
   isReversed?: boolean;
   backgroundColor: 'white' | 'dark';
 }
@@ -21,10 +21,11 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
   features,
   actionText,
   icon,
+  image,
   isReversed = false,
   backgroundColor
 }) => {
-  const textClass = backgroundColor === 'white' ? 'text-on-white' : 'text-on-dark';
+  const textClass = "text-black";
   const bgClass = backgroundColor === 'white' ? 'bg-white' : 'bg-brand-lightGray';
   
   return (
@@ -54,10 +55,20 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
               {actionText}
             </WhatsAppButton>
           </div>
-          <div className="md:w-1/2 bg-gray-100 h-64 md:h-80 rounded-lg flex items-center justify-center">
-            <div className="text-9xl text-brand-blue">
-              {icon}
-            </div>
+          <div className="md:w-1/2 bg-gray-100 h-64 md:h-80 rounded-lg flex items-center justify-center overflow-hidden">
+            {image ? (
+              <img
+                src={image}
+                alt={title}
+                className="object-cover w-full h-full"
+                style={{ maxHeight: 320, borderRadius: '0.5rem' }}
+                loading="lazy"
+              />
+            ) : (
+              <div className="text-9xl text-brand-blue">
+                {icon}
+              </div>
+            )}
           </div>
         </div>
       </div>

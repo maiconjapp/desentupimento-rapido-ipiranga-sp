@@ -47,6 +47,7 @@ const ServicesPage = () => {
         features={piaFeatures}
         actionText="Desentupir minha pia"
         icon={<Droplet className="h-8 w-8 text-brand-blue" />}
+        image="https://i.ibb.co/hRxPtLZj/desentupimento-de-pia-sp.jpg"
         backgroundColor="white"
       />
 
@@ -57,6 +58,7 @@ const ServicesPage = () => {
         features={vasoFeatures}
         actionText="Desentupir meu vaso"
         icon={<SquareAsterisk className="h-8 w-8 text-brand-blue" />}
+        image="https://i.ibb.co/XkbZgW1z/desentupimento-de-vaso-sp.jpg"
         isReversed={true}
         backgroundColor="dark"
       />
@@ -68,6 +70,7 @@ const ServicesPage = () => {
         features={raloFeatures}
         actionText="Desentupir meu ralo"
         icon={<WashingMachine className="h-8 w-8 text-brand-blue" />}
+        image="https://i.ibb.co/QjkZcsCP/IMG-20250422-WA0243.jpg"
         backgroundColor="white"
       />
 
