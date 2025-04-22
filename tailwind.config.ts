@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -22,31 +23,31 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        background: '#000000', // Pure black background
-        foreground: '#FFFFFF', // Pure white text
+        background: '#FFFFFF', // Pure white background
+        foreground: '#000000', // Black text
         primary: {
-          DEFAULT: '#ff7e00', // Orange from logo
-          foreground: '#FFFFFF'
+          DEFAULT: '#ff7e00', 
+          foreground: '#000000'
         },
         secondary: {
-          DEFAULT: '#0c8b45', // Green from logo
-          foreground: '#FFFFFF'
+          DEFAULT: '#0c8b45', 
+          foreground: '#000000'
         },
         destructive: {
-          DEFAULT: '#ea384c', // Red from logo
-          foreground: '#FFFFFF'
+          DEFAULT: '#ea384c', 
+          foreground: '#000000'
         },
         muted: {
-          DEFAULT: '#222', // Dark gray
-          foreground: '#FFFFFF'
+          DEFAULT: '#f4f4f4', 
+          foreground: '#000000'
         },
         accent: {
-          DEFAULT: '#FFD600', // Yellow accent
+          DEFAULT: '#FFD600', 
           foreground: '#000000'
         },
         card: {
-          DEFAULT: '#000000', // Black
-          foreground: '#FFFFFF' // White
+          DEFAULT: '#FFFFFF', 
+          foreground: '#000000'
         },
         brand: {
           orange: '#ff7e00',
@@ -79,3 +80,4 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+

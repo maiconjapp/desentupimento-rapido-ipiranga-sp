@@ -5,8 +5,8 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%; /* Black */
-    --foreground: 0 0% 100%; /* White */
+    --background: 0 0% 100%; /* White */
+    --foreground: 0 0% 0%; /* Black */
   }
 
   body {
@@ -14,64 +14,64 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply text-white font-semibold;
+    @apply text-black font-semibold;
   }
 }
 
 @layer components {
   .hero-section {
-    @apply bg-black text-white relative py-16 md:py-24;
+    @apply bg-white text-black relative py-16 md:py-24;
   }
 
   .section {
-    @apply bg-black text-white py-12 md:py-16;
+    @apply bg-white text-black py-12 md:py-16;
   }
 
   .container-custom {
-    @apply bg-black text-white container px-4 md:px-6 mx-auto max-w-7xl;
+    @apply bg-white text-black container px-4 md:px-6 mx-auto max-w-7xl;
   }
 
   .hero-section-gradient {
-    @apply relative bg-gradient-to-br from-brand-orange to-brand-black text-white py-16 md:py-24;
+    @apply relative bg-gradient-to-br from-brand-orange to-white text-black py-16 md:py-24;
   }
 
-  /* Improved text visibility for dark backgrounds */
+  /* Cores de texto para diferentes fundos */
   .dark-section-text {
-    @apply text-gray-200 hover:text-white transition-colors;
+    @apply text-gray-800 hover:text-black transition-colors;
   }
 
   .dark-section-muted {
-    @apply text-gray-400 hover:text-gray-200 transition-colors;
+    @apply text-gray-600 hover:text-gray-800 transition-colors;
   }
 }
 
-/* Ensure links have good contrast */
+/* Links com boa visibilidade */
 a {
-  @apply text-brand-orange hover:text-white transition-colors;
+  @apply text-brand-orange hover:text-black transition-colors;
 }
 
 .text-muted-foreground {
-  @apply text-gray-300;
+  @apply text-gray-600;
 }
 
 .text-brand-gray {
-  @apply text-gray-300;
+  @apply text-gray-600;
 }
 
 .bg-brand-lightGray {
-  @apply bg-gray-800;
+  @apply bg-gray-100;
 }
 
-/* Utility for text contrast */
+/* Utilidades para contraste de texto em diferentes fundos */
 .text-on-dark {
-  color: #f1f1f1 !important;
+  color: #000 !important;
 }
 
 .text-on-white {
-  color: #111 !important;
+  color: #000 !important;
 }
 
-/* Fix for light text on light backgrounds */
+/* Correções de cores para diferentes combinações de fundo e texto */
 .bg-white .text-gray-300,
 .bg-white .text-gray-400,
 .bg-white .text-muted-foreground,
@@ -79,22 +79,18 @@ a {
   color: #333 !important;
 }
 
-/* Fix for dark text on dark backgrounds */
-.bg-gray-800 .text-gray-700,
-.bg-gray-800 .text-gray-900,
-.bg-gray-800 .text-black,
-.bg-brand-lightGray .text-gray-700,
-.bg-brand-lightGray .text-gray-900,
-.bg-brand-lightGray .text-black {
-  color: #f1f1f1 !important;
+.bg-gray-100 .text-gray-700,
+.bg-gray-100 .text-gray-900,
+.bg-gray-100 .text-black {
+  color: #000 !important;
 }
 
-/* Fix card descriptions and content */
-.bg-gray-800 .card-description,
-.bg-brand-lightGray .card-description {
-  color: #e0e0e0 !important;
-}
-
+/* Descrições de cartões em diferentes fundos */
 .bg-white .card-description {
   color: #333 !important;
 }
+
+.bg-gray-100 .card-description {
+  color: #000 !important;
+}
+
