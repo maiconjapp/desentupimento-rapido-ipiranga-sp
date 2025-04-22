@@ -28,7 +28,7 @@ const Footer = () => {
           
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Links Rápidos</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 bg-brand-black">
               <li>
                 <Link to="/" className="text-brand-orange hover:text-orange-600 transition-colors">
                   Início
