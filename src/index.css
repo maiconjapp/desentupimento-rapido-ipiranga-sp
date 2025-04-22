@@ -6,96 +6,172 @@
 @layer base {
   :root {
     --background: 0 0% 100%; /* White */
-    --foreground: 0 0% 0%; /* Black */
+    --foreground: 0 0% 0%;   /* Black */
   }
 
-  body {
-    @apply bg-background text-foreground;
+  html, body {
+    background: #fff; /* Fundo absoluto branco */
+    color: #1a1a1a;   /* Texto ultra legível */
+    font-family: 'Inter', system-ui, sans-serif;
+    @apply antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold;
-    color: black;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -0.5px;
+    @apply mb-2;
+  }
+
+  p {
+    @apply mb-3 leading-relaxed;
+    color: #222;
   }
 }
 
 @layer components {
   .hero-section {
-    background-color: white;
-    color: black;
-    @apply relative py-16 md:py-24;
+    background: linear-gradient(135deg, #fff 70%, #ffe7c3 100%);
+    color: #111;
+    @apply relative py-20 md:py-28 flex items-center;
+    box-shadow: 0 6px 32px 0 rgba(255, 167, 38, 0.05);
+    border-bottom: 1.5px solid #fdf2e1;
   }
 
   .section {
-    background-color: white;
-    color: black;
-    @apply py-12 md:py-16;
+    background: #fff;
+    color: #1a1a1a;
+    @apply py-16 md:py-20;
   }
 
   .container-custom {
-    background-color: white;
-    color: black;
-    @apply container px-4 md:px-6 mx-auto max-w-7xl;
+    @apply container px-4 md:px-10 mx-auto max-w-7xl;
   }
 
   .hero-section-gradient {
-    @apply relative bg-gradient-to-br from-brand-orange to-white py-16 md:py-24;
-    color: black;
+    background: linear-gradient(90deg, #fff 60%, #ffecd2 100%);
+    @apply relative py-20 md:py-28 rounded-2xl;
+    color: #1a1a1a;
+    box-shadow: 0 8px 32px 0 rgba(255,177,90,0.12);
   }
 
-  /* Cores de texto para diferentes fundos */
+  /* Cards genéricos */
+  .card-visual {
+    background: #fff;
+    border-radius: 1rem;
+    transition: transform 0.18s cubic-bezier(.4,2,.3,1), box-shadow .18s;
+    box-shadow: 0 2px 12px 0 rgba(204,200,193,0.12);
+    border: 1px solid #f3f4f6;
+  }
+  .card-visual:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 4px 24px 0 rgba(255,126,0,0.13);
+    border-color: #ffd2a2;
+  }
+
+  /* Destaque escurecido para elementos de chips, tags ou seções muted */
+  .bg-section-muted {
+    background: #f8f8f8;
+    color: #212121;
+  }
+
+  /* Destaques para textos em secões claras/claras */
   .dark-section-text {
-    color: #1a1a1a;
-    @apply hover:text-black transition-colors;
+    color: #181818;
+    @apply font-medium transition-colors;
   }
 
   .dark-section-muted {
     color: #4b5563;
-    @apply hover:text-gray-800 transition-colors;
+    @apply transition-colors;
+  }
+
+  /* Gradiente para botão WhatsApp ou calls-to-action */
+  .btn-gradient {
+    background: linear-gradient(90deg, #ff7e00 0%, #ffd600 100%);
+    color: #222 !important;
+    box-shadow: 0 4px 24px 0 rgba(255,126,0,0.11);
+    border: none;
+    transition: box-shadow .2s, transform .12s;
+  }
+  .btn-gradient:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 32px 0 rgba(255,126,0,0.18);
   }
 }
 
-/* Links com boa visibilidade */
+/* Links com visual moderno e alta legibilidade */
 a {
-  @apply text-brand-orange hover:text-black transition-colors;
+  color: #ff7e00;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  transition: color .13s;
+}
+a:hover, a:focus {
+  color: #d85c00;
+  outline: none;
 }
 
-.text-muted-foreground {
-  color: #4b5563;
+/* Texto secundário e muted com alto contraste */
+.text-muted-foreground, .text-brand-gray {
+  color: #50545a !important;
 }
 
-.text-brand-gray {
-  color: #4b5563;
-}
-
+/* Fundo suave para seções alternadas */
 .bg-brand-lightGray {
-  background-color: #f3f4f6;
+  background-color: #f9fafb;
 }
 
 /* Utilidades para contraste de texto em diferentes fundos */
-.text-on-dark {
-  color: black;
+.text-on-dark, .text-on-white {
+  color: #222 !important;
 }
 
-.text-on-white {
-  color: black;
-}
-
-/* Correções de cores para diferentes combinações de fundo e texto */
+/* Correção em textos de cards para escurecer letras em todos os fundos claros */
 .bg-white .text-gray-300,
 .bg-white .text-gray-400,
 .bg-white .text-muted-foreground,
-.bg-white .text-brand-gray {
-  color: black;
-}
-
+.bg-white .text-brand-gray,
+.bg-white .card-description,
+.bg-gray-100 .card-description,
 .bg-gray-100 .text-gray-700,
 .bg-gray-100 .text-gray-900,
 .bg-gray-100 .text-black {
-  color: black;
+  color: #1a1a1a !important;
 }
 
-.bg-white .card-description,
-.bg-gray-100 .card-description {
-  color: black;
+/* Card efeito vidro bonito para futuras seções especiais */
+.glassmorphism {
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 2px 16px 0 rgba(179,164,139,0.09);
+  border-radius: 1rem;
+  border: 1.5px solid #ffe6be48;
+  backdrop-filter: blur(10px);
+}
+
+/* Micro-animações (FadeIn para qualquer container) */
+.fade-in {
+  opacity: 0;
+  animation: fade-in 0.8s cubic-bezier(.23, 1, .32, 1) forwards;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(22px);}
+  to { opacity: 1; transform: none;}
+}
+
+/* Sombreamentos/theme */
+
+.shadow-subtle {
+  box-shadow: 0 2px 12px 0 rgba(140,86,1,0.09), 0 1.5px 4px 0 rgba(0,0,0,0.04);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background: #f8f8f8;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffe8c4;
+  border-radius: 6px;
 }
