@@ -15,8 +15,8 @@ const Header = () => {
     <header className="bg-black shadow-md sticky top-0 z-50 border-b border-gray-800">
       <div className="container-custom flex justify-between items-center py-4">
         <Link to="/" className="flex items-center">
-          <h1 className="text-xl md:text-2xl font-bold">
-            <span className="text-brand-orange">Magnavita</span>{" "}
+          <h1 className="text-xl md:text-2xl font-bold flex items-center">
+            <span className="text-brand-orange mr-2">Magnavita</span>
             <span className="text-white text-sm md:text-base">Marido de Aluguel</span>
           </h1>
         </Link>
