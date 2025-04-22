@@ -26,48 +26,49 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#ff7e00', // Orange from logo
+					foreground: '#fff'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: '#0c8b45', // Green from logo
+					foreground: '#fff'
 				},
 				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
+					DEFAULT: '#ea384c', // Red from logo
+					foreground: '#fff'
 				},
 				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					DEFAULT: '#333', // Deep gray/black
+					foreground: '#eee'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					DEFAULT: '#FFD600', // Yellow accent (can adjust)
+					foreground: '#222'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
 				},
 				card: {
-					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					DEFAULT: '#fff',
+					foreground: '#222'
 				},
 				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+					DEFAULT: '#222', // Black for sidebar
+					foreground: '#fff',
+					primary: '#ff7e00', // Same orange for highlight
+					'primary-foreground': '#222',
+					accent: '#FFD600',
+					'accent-foreground': '#222',
+					border: '#333',
+					ring: '#ea384c'
 				},
 				brand: {
-					blue: '#0960bd',
+					blue: '#0960bd', // can replace if you wish (not central in logo)
 					orange: '#ff7e00',
 					gray: '#4a5568',
 					lightGray: '#f7fafc',
+					black: '#222'
 				}
 			},
 			borderRadius: {
