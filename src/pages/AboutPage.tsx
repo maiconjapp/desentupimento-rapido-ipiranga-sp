@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -38,11 +37,13 @@ const AboutPage = () => {
                 O que nos diferencia é o compromisso com a qualidade do serviço, a rapidez no atendimento e a transparência nos orçamentos, construindo relacionamentos de confiança com nossos clientes em toda a região.
               </p>
             </div>
-            <div className="md:w-1/2 bg-gray-100 h-80 rounded-lg flex items-center justify-center">
-              <div className="text-6xl text-brand-blue font-bold">
-                Magnavita
-                <div className="text-2xl mt-2 text-brand-gray">Marido de Aluguel</div>
-              </div>
+            <div className="md:w-1/2 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
+              <img 
+                src="https://i.ibb.co/TDk4CFX9/Empresa-de-desentupimento-ipiranga.jpg" 
+                alt="Empresa de desentupimento Ipiranga" 
+                className="object-cover w-full h-full rounded-lg"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
