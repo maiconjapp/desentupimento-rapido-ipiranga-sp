@@ -3,19 +3,17 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { Button } from '@/components/ui/button';
-
 const AboutPage = () => {
-  return (
-    <>
+  return <>
       <Header />
       
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container-custom text-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-brand-black">
             Sobre a Magnavita Marido de Aluguel
           </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto text-brand-black">
             Conheça nossa história e nosso compromisso com a qualidade nos serviços de desentupimento na região do Ipiranga.
           </p>
         </div>
@@ -38,12 +36,7 @@ const AboutPage = () => {
               </p>
             </div>
             <div className="md:w-1/2 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-              <img 
-                src="https://i.ibb.co/TDk4CFX9/Empresa-de-desentupimento-ipiranga.jpg" 
-                alt="Empresa de desentupimento Ipiranga" 
-                className="object-cover w-full h-full rounded-lg"
-                loading="lazy"
-              />
+              <img src="https://i.ibb.co/TDk4CFX9/Empresa-de-desentupimento-ipiranga.jpg" alt="Empresa de desentupimento Ipiranga" className="object-cover w-full h-full rounded-lg" loading="lazy" />
             </div>
           </div>
         </div>
@@ -102,8 +95,8 @@ const AboutPage = () => {
             <div className="flex gap-4">
               <div className="bg-brand-blue/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue">
-                  <circle cx="12" cy="12" r="10"/>
-                  <polyline points="12 6 12 12 16 14"/>
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
                 </svg>
               </div>
               <div>
@@ -117,7 +110,7 @@ const AboutPage = () => {
             <div className="flex gap-4">
               <div className="bg-brand-blue/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue">
-                  <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"/>
+                  <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z" />
                 </svg>
               </div>
               <div>
@@ -131,8 +124,8 @@ const AboutPage = () => {
             <div className="flex gap-4">
               <div className="bg-brand-blue/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue">
-                  <circle cx="12" cy="8" r="7"/>
-                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
                 </svg>
               </div>
               <div>
@@ -146,8 +139,8 @@ const AboutPage = () => {
             <div className="flex gap-4">
               <div className="bg-brand-blue/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue">
-                  <rect x="2" y="4" width="20" height="16" rx="2"/>
-                  <path d="M7 15h0M12 15h0M17 15h0"/>
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="M7 15h0M12 15h0M17 15h0" />
                 </svg>
               </div>
               <div>
@@ -161,7 +154,7 @@ const AboutPage = () => {
             <div className="flex gap-4">
               <div className="bg-brand-blue/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue">
-                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                 </svg>
               </div>
               <div>
@@ -175,7 +168,7 @@ const AboutPage = () => {
             <div className="flex gap-4">
               <div className="bg-brand-blue/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue">
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                 </svg>
               </div>
               <div>
@@ -209,8 +202,6 @@ const AboutPage = () => {
       
       <WhatsAppButton floating neighborhood="Ipiranga" />
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default AboutPage;
