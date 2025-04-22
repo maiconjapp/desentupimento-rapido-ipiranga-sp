@@ -77,8 +77,10 @@ const ContactPage = () => {
             
             <div>
               <h2 className="text-2xl font-bold mb-6 text-black">Nossa Localização</h2>
-              <Map />
-              <div className="mt-8">
+              <div className="mb-6">
+                <Map />
+              </div>
+              <div className="mt-4">
                 <h3 className="text-xl font-semibold mb-4 text-black">Horário de Atendimento</h3>
                 <div className="grid grid-cols-2 gap-2 mb-4">
                   <div className="text-brand-gray text-black">Segunda a Sexta</div>
