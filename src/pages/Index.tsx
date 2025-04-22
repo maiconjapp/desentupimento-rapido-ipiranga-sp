@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sink, Shower, Toilet, ArrowDown } from 'lucide-react';
+import { ArrowDown, Droplet, SquareAsterisk, WashingMachine } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -53,19 +53,19 @@ const Index = () => {
             <ServiceCard
               title="Desentupimento de Pia"
               description="Desentupimos pias de cozinha, banheiro e áreas de serviço com equipamentos modernos e sem sujeira."
-              icon={<Sink className="h-12 w-12" />}
+              icon={<Droplet className="h-12 w-12" />}
               link="/servicos#pia"
             />
             <ServiceCard
               title="Desentupimento de Vaso"
               description="Resolvemos entupimentos em vasos sanitários de forma rápida, higiênica e sem danificar suas instalações."
-              icon={<Toilet className="h-12 w-12" />}
+              icon={<SquareAsterisk className="h-12 w-12" />}
               link="/servicos#vaso"
             />
             <ServiceCard
               title="Desentupimento de Ralo"
               description="Eliminamos entupimentos em ralos de banheiros, box, áreas externas e caixas de gordura."
-              icon={<Shower className="h-12 w-12" />}
+              icon={<WashingMachine className="h-12 w-12" />}
               link="/servicos#ralo"
             />
           </div>

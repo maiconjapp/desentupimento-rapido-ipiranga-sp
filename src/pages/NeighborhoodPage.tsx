@@ -2,7 +2,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { Sink, Toilet, Shower } from 'lucide-react';
+import { Droplet, SquareAsterisk, WashingMachine } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -87,7 +87,7 @@ const NeighborhoodPage: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
                 <div className="bg-brand-lightGray p-6 rounded-lg">
                   <div className="flex justify-center mb-4">
-                    <Sink className="h-10 w-10 text-brand-blue" />
+                    <Droplet className="h-10 w-10 text-brand-blue" />
                   </div>
                   <h4 className="text-lg font-semibold mb-2 text-center">Desentupimento de Pia</h4>
                   <p className="text-brand-gray text-center">
@@ -97,7 +97,7 @@ const NeighborhoodPage: React.FC = () => {
                 
                 <div className="bg-brand-lightGray p-6 rounded-lg">
                   <div className="flex justify-center mb-4">
-                    <Toilet className="h-10 w-10 text-brand-blue" />
+                    <SquareAsterisk className="h-10 w-10 text-brand-blue" />
                   </div>
                   <h4 className="text-lg font-semibold mb-2 text-center">Desentupimento de Vaso</h4>
                   <p className="text-brand-gray text-center">
@@ -107,7 +107,7 @@ const NeighborhoodPage: React.FC = () => {
                 
                 <div className="bg-brand-lightGray p-6 rounded-lg">
                   <div className="flex justify-center mb-4">
-                    <Shower className="h-10 w-10 text-brand-blue" />
+                    <WashingMachine className="h-10 w-10 text-brand-blue" />
                   </div>
                   <h4 className="text-lg font-semibold mb-2 text-center">Desentupimento de Ralo</h4>
                   <p className="text-brand-gray text-center">
@@ -277,7 +277,7 @@ const NeighborhoodPage: React.FC = () => {
                       to="/servicos#pia" 
                       className="flex items-center text-brand-blue hover:text-brand-orange transition-colors"
                     >
-                      <Sink className="h-5 w-5 mr-2" />
+                      <Droplet className="h-5 w-5 mr-2" />
                       <span>Desentupimento de Pia</span>
                     </Link>
                   </li>
@@ -286,7 +286,7 @@ const NeighborhoodPage: React.FC = () => {
                       to="/servicos#vaso" 
                       className="flex items-center text-brand-blue hover:text-brand-orange transition-colors"
                     >
-                      <Toilet className="h-5 w-5 mr-2" />
+                      <SquareAsterisk className="h-5 w-5 mr-2" />
                       <span>Desentupimento de Vaso</span>
                     </Link>
                   </li>
@@ -295,7 +295,7 @@ const NeighborhoodPage: React.FC = () => {
                       to="/servicos#ralo" 
                       className="flex items-center text-brand-blue hover:text-brand-orange transition-colors"
                     >
-                      <Shower className="h-5 w-5 mr-2" />
+                      <WashingMachine className="h-5 w-5 mr-2" />
                       <span>Desentupimento de Ralo</span>
                     </Link>
                   </li>

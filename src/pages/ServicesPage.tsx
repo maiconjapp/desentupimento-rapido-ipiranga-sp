@@ -1,5 +1,6 @@
 import React from 'react';
-import { Sink, Toilet, Shower, Wrench } from 'lucide-react';
+import { Droplet, SquareAsterisk, WashingMachine, Wrench } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -27,7 +28,7 @@ const ServicesPage = () => {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2">
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Sink className="h-8 w-8 text-brand-blue" />
+                <Droplet className="h-8 w-8 text-brand-blue" />
               </div>
               <h2 className="text-3xl font-bold mb-4">Desentupimento de Pia</h2>
               <p className="text-lg text-brand-gray mb-4">
@@ -69,7 +70,7 @@ const ServicesPage = () => {
             </div>
             <div className="md:w-1/2 bg-gray-100 h-64 md:h-80 rounded-lg flex items-center justify-center">
               <div className="text-9xl text-brand-blue">
-                <Sink />
+                <Droplet />
               </div>
             </div>
           </div>
@@ -82,12 +83,12 @@ const ServicesPage = () => {
           <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
             <div className="md:w-1/2 bg-gray-100 h-64 md:h-80 rounded-lg flex items-center justify-center">
               <div className="text-9xl text-brand-blue">
-                <Toilet />
+                <SquareAsterisk />
               </div>
             </div>
             <div className="md:w-1/2">
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Toilet className="h-8 w-8 text-brand-blue" />
+                <SquareAsterisk className="h-8 w-8 text-brand-blue" />
               </div>
               <h2 className="text-3xl font-bold mb-4">Desentupimento de Vaso Sanitário</h2>
               <p className="text-lg text-brand-gray mb-4">
@@ -137,7 +138,7 @@ const ServicesPage = () => {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2">
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Shower className="h-8 w-8 text-brand-blue" />
+                <WashingMachine className="h-8 w-8 text-brand-blue" />
               </div>
               <h2 className="text-3xl font-bold mb-4">Desentupimento de Ralo</h2>
               <p className="text-lg text-brand-gray mb-4">
@@ -179,7 +180,7 @@ const ServicesPage = () => {
             </div>
             <div className="md:w-1/2 bg-gray-100 h-64 md:h-80 rounded-lg flex items-center justify-center">
               <div className="text-9xl text-brand-blue">
-                <Shower />
+                <WashingMachine />
               </div>
             </div>
           </div>
