@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">Magnavita Marido de Aluguel</h3>
+            <h3 className="text-xl font-bold text-brand-orange mb-4">Magnavita Marido de Aluguel</h3>
             <p className="text-brand-orange mb-4">
               Especialistas em desentupimento rápido de pia, vaso e ralo em toda a região do Ipiranga e Zona Sul de SP.
             </p>

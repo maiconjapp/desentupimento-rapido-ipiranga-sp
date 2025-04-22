@@ -28,7 +28,7 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
         href={whatsappLink} 
         target="_blank" 
         rel="noopener noreferrer"
-        className={`fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 rounded-full bg-green-500 shadow-lg hover:bg-green-600 transition-colors ${className}`}
+        className={`fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 rounded-full bg-brand-orange text-white shadow-lg hover:bg-orange-600 transition-colors ${className}`}
         aria-label="Entre em contato pelo WhatsApp"
       >
         <svg 
@@ -53,7 +53,7 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
   return (
     <Button 
       variant={variant} 
-      className={`bg-green-600 hover:bg-green-700 text-white ${className}`}
+      className={`bg-brand-orange hover:bg-orange-600 text-white ${className}`}
       size={size}
       asChild
     >
