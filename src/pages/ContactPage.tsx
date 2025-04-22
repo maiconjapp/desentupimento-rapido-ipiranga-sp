@@ -15,10 +15,10 @@ const ContactPage = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container-custom text-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-black mb-4">
             Entre em Contato
           </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Estamos prontos para atender sua emergência de desentupimento no Ipiranga e Zona Sul de São Paulo.
           </p>
         </div>
@@ -32,8 +32,8 @@ const ContactPage = () => {
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="h-8 w-8 text-brand-blue" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Telefone</h3>
-              <p className="text-brand-gray mb-2">
+              <h3 className="text-xl font-semibold mb-2 text-black">Telefone</h3>
+              <p className="text-brand-gray mb-2 text-black">
                 Atendimento em horário comercial
               </p>
               <a href="tel:+5511977480538" className="text-brand-blue hover:text-brand-orange transition-colors font-medium">
@@ -45,8 +45,8 @@ const ContactPage = () => {
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="h-8 w-8 text-brand-blue" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Endereço</h3>
-              <p className="text-brand-gray mb-2">
+              <h3 className="text-xl font-semibold mb-2 text-black">Endereço</h3>
+              <p className="text-brand-gray mb-2 text-black">
                 Rua Dom Pero Leitão, 137<br />
                 04134-070 São Paulo
               </p>
@@ -59,8 +59,8 @@ const ContactPage = () => {
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Home className="h-8 w-8 text-brand-blue" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Site Oficial</h3>
-              <p className="text-brand-gray mb-2">
+              <h3 className="text-xl font-semibold mb-2 text-black">Site Oficial</h3>
+              <p className="text-brand-gray mb-2 text-black">
                 Visite nosso site oficial para mais informações
               </p>
               <a href="https://magnavitamaridodealuguel.com/pt" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:text-brand-orange transition-colors font-medium">
@@ -71,22 +71,22 @@ const ContactPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl font-bold mb-6">Envie-nos uma Mensagem</h2>
+              <h2 className="text-2xl font-bold mb-6 text-black">Envie-nos uma Mensagem</h2>
               <ContactForm />
             </div>
             
             <div>
-              <h2 className="text-2xl font-bold mb-6">Nossa Localização</h2>
+              <h2 className="text-2xl font-bold mb-6 text-black">Nossa Localização</h2>
               <Map />
               <div className="mt-8">
-                <h3 className="text-xl font-semibold mb-4">Horário de Atendimento</h3>
+                <h3 className="text-xl font-semibold mb-4 text-black">Horário de Atendimento</h3>
                 <div className="grid grid-cols-2 gap-2 mb-4">
-                  <div className="text-brand-gray">Segunda a Sexta</div>
-                  <div className="font-medium">08:00 - 18:00</div>
-                  <div className="text-brand-gray">Sábado</div>
-                  <div className="font-medium">Mediante agendamento</div>
+                  <div className="text-brand-gray text-black">Segunda a Sexta</div>
+                  <div className="font-medium text-black">08:00 - 18:00</div>
+                  <div className="text-brand-gray text-black">Sábado</div>
+                  <div className="font-medium text-black">Mediante agendamento</div>
                 </div>
-                <p className="text-brand-gray">
+                <p className="text-brand-gray text-black">
                   Para emergências fora do horário comercial, entre em contato via WhatsApp.
                 </p>
               </div>

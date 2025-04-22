@@ -13,7 +13,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ text, author, locatio
     <Card className="h-full flex flex-col bg-gray-800 border-gray-700">
       <CardContent className="pt-6 flex-grow">
         <div className="mb-4 text-3xl text-brand-orange">"</div>
-        <p className="text-gray-300 italic">{text}</p>
+        <p className="text-white italic">{text}</p>
       </CardContent>
       <CardFooter className="flex-col items-start">
         <p className="font-semibold text-white">{author}</p>

@@ -10,8 +10,8 @@
   }
 
   html, body {
-    background: #fff; /* Fundo absoluto branco */
-    color: #1a1a1a;   /* Texto ultra legível */
+    background: #fff;
+    color: #1a1a1a;
     font-family: 'Inter', system-ui, sans-serif;
     @apply antialiased;
   }
@@ -30,10 +30,54 @@
   }
 }
 
+/* Utilidades para contraste de texto */
+.text-on-white, .bg-white .text-default,
+.bg-gray-100 .text-default,
+.text-brand-dark, .bg-brand-lightGray .text-default {
+  color: #181818 !important;
+}
+.text-on-dark, .bg-black .text-default,
+.bg-gray-800 .text-default, .bg-brand-blue .text-default,
+.bg-brand-orange .text-default,
+.text-white-important {
+  color: #fff !important;
+}
+
+/* Forçar contraste em componentes escuros */
+.bg-black,
+.bg-gray-800,
+.bg-brand-blue,
+.bg-brand-orange {
+  &,
+  h1, h2, h3, h4, h5, h6,
+  p,
+  .text-default {
+    color: #fff !important;
+  }
+  .text-gray-300, .text-gray-400, .text-gray-500, .text-brand-gray {
+    color: #e8e8e8 !important;
+  }
+}
+
+/* Forçar contraste em componentes claros */
+.bg-white,
+.bg-brand-lightGray,
+.bg-gray-100 {
+  &,
+  h1, h2, h3, h4, h5, h6,
+  p,
+  .text-default {
+    color: #181818 !important;
+  }
+  .text-brand-gray, .text-gray-300, .text-gray-400, .text-gray-500 {
+    color: #353535 !important;
+  }
+}
+
 @layer components {
   .hero-section {
     background: linear-gradient(135deg, #fff 70%, #ffe7c3 100%);
-    color: #111;
+    color: #181818;
     @apply relative py-20 md:py-28 flex items-center;
     box-shadow: 0 6px 32px 0 rgba(255, 167, 38, 0.05);
     border-bottom: 1.5px solid #fdf2e1;
@@ -41,7 +85,7 @@
 
   .section {
     background: #fff;
-    color: #1a1a1a;
+    color: #181818;
     @apply py-16 md:py-20;
   }
 
@@ -52,11 +96,10 @@
   .hero-section-gradient {
     background: linear-gradient(90deg, #fff 60%, #ffecd2 100%);
     @apply relative py-20 md:py-28 rounded-2xl;
-    color: #1a1a1a;
+    color: #181818;
     box-shadow: 0 8px 32px 0 rgba(255,177,90,0.12);
   }
 
-  /* Cards genéricos */
   .card-visual {
     background: #fff;
     border-radius: 1rem;
@@ -69,25 +112,18 @@
     box-shadow: 0 4px 24px 0 rgba(255,126,0,0.13);
     border-color: #ffd2a2;
   }
-
-  /* Destaque escurecido para elementos de chips, tags ou seções muted */
   .bg-section-muted {
     background: #f8f8f8;
-    color: #212121;
-  }
-
-  /* Destaques para textos em secões claras/claras */
-  .dark-section-text {
     color: #181818;
+  }
+  .dark-section-text {
+    color: #fff;
     @apply font-medium transition-colors;
   }
-
   .dark-section-muted {
-    color: #4b5563;
+    color: #ededed;
     @apply transition-colors;
   }
-
-  /* Gradiente para botão WhatsApp ou calls-to-action */
   .btn-gradient {
     background: linear-gradient(90deg, #ff7e00 0%, #ffd600 100%);
     color: #222 !important;
@@ -113,22 +149,21 @@ a:hover, a:focus {
   outline: none;
 }
 
-/* Texto secundário e muted com alto contraste */
 .text-muted-foreground, .text-brand-gray {
   color: #50545a !important;
 }
 
-/* Fundo suave para seções alternadas */
 .bg-brand-lightGray {
   background-color: #f9fafb;
 }
 
-/* Utilidades para contraste de texto em diferentes fundos */
-.text-on-dark, .text-on-white {
-  color: #222 !important;
+.text-on-dark, .dark-section-text {
+  color: #fff !important;
+}
+.text-on-white, .bg-white .text-on-white {
+  color: #181818 !important;
 }
 
-/* Correção em textos de cards para escurecer letras em todos os fundos claros */
 .bg-white .text-gray-300,
 .bg-white .text-gray-400,
 .bg-white .text-muted-foreground,
@@ -138,7 +173,23 @@ a:hover, a:focus {
 .bg-gray-100 .text-gray-700,
 .bg-gray-100 .text-gray-900,
 .bg-gray-100 .text-black {
-  color: #1a1a1a !important;
+  color: #181818 !important;
+}
+
+.bg-gray-800,
+.bg-brand-blue,
+.bg-brand-orange {
+  .text-gray-300,
+  .text-gray-400,
+  .text-muted-foreground,
+  .text-brand-gray,
+  .card-description,
+  .text-gray-900 {
+    color: #ededed !important;
+  }
+  h1, h2, h3, h4, h5, h6, p, span, div, a, ul, li, .text-white {
+    color: #fff !important;
+  }
 }
 
 /* Card efeito vidro bonito para futuras seções especiais */
@@ -161,7 +212,6 @@ a:hover, a:focus {
 }
 
 /* Sombreamentos/theme */
-
 .shadow-subtle {
   box-shadow: 0 2px 12px 0 rgba(140,86,1,0.09), 0 1.5px 4px 0 rgba(0,0,0,0.04);
 }
@@ -175,3 +225,4 @@ a:hover, a:focus {
   background: #ffe8c4;
   border-radius: 6px;
 }
+

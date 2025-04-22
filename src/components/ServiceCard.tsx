@@ -18,7 +18,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, lin
         <div className="flex justify-center mb-4 text-brand-orange">
           {icon}
         </div>
-        <CardTitle className="text-center text-xl text-white">{title}</CardTitle>
+        <CardTitle className="text-center text-white text-xl">{title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
         <CardDescription className="text-center text-gray-300">
@@ -26,7 +26,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, lin
         </CardDescription>
       </CardContent>
       <CardFooter className="justify-center pt-4">
-        <Button asChild className="bg-brand-orange hover:bg-orange-600">
+        <Button asChild className="bg-brand-orange hover:bg-orange-600 text-white">
           <Link to={link}>Saiba mais</Link>
         </Button>
       </CardFooter>

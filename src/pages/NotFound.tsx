@@ -24,8 +24,8 @@ const NotFound = () => {
       <div className="min-h-[60vh] flex items-center justify-center bg-brand-lightGray">
         <div className="text-center px-4">
           <h1 className="text-6xl font-bold text-brand-blue mb-4">404</h1>
-          <p className="text-2xl text-brand-gray mb-6">Oops! Página não encontrada</p>
-          <p className="text-lg text-brand-gray mb-8 max-w-lg mx-auto">
+          <p className="text-2xl text-black mb-6">Oops! Página não encontrada</p>
+          <p className="text-lg text-black mb-8 max-w-lg mx-auto">
             A página que você está procurando não existe ou foi movida.
             Volte para a página inicial ou entre em contato conosco.
           </p>

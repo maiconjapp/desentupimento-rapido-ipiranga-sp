@@ -7,8 +7,8 @@ const CTASection = () => {
   return (
     <section className="section bg-brand-blue text-white">
       <div className="container-custom text-center">
-        <h2 className="text-3xl font-bold mb-4">Precisa de um Orçamento?</h2>
-        <p className="text-xl mb-8 max-w-2xl mx-auto">
+        <h2 className="text-3xl font-bold mb-4 text-white">Precisa de um Orçamento?</h2>
+        <p className="text-xl mb-8 max-w-2xl mx-auto text-white">
           Entre em contato agora mesmo para um orçamento sem compromisso e resolva seu problema de entupimento hoje!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
