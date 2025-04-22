@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Droplet, SquareAsterisk, WashingMachine, Wrench } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -10,7 +9,6 @@ const ServicesPage = () => {
   return (
     <>
       <Header />
-      
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container-custom text-center">
@@ -22,7 +20,7 @@ const ServicesPage = () => {
           </p>
         </div>
       </section>
-      
+
       {/* Pia Service */}
       <section id="pia" className="section bg-white">
         <div className="container-custom">
@@ -77,7 +75,7 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Vaso Service */}
       <section id="vaso" className="section bg-brand-lightGray">
         <div className="container-custom">
@@ -132,7 +130,7 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Ralo Service */}
       <section id="ralo" className="section bg-white">
         <div className="container-custom">
@@ -187,7 +185,7 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Other Services */}
       <section className="section bg-brand-lightGray">
         <div className="container-custom">
@@ -225,7 +223,7 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="section bg-brand-blue text-white">
         <div className="container-custom text-center">
@@ -243,7 +241,7 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
-      
+
       <WhatsAppButton floating neighborhood="Ipiranga" />
       <Footer />
     </>
@@ -251,4 +249,3 @@ const ServicesPage = () => {
 };
 
 export default ServicesPage;
-
