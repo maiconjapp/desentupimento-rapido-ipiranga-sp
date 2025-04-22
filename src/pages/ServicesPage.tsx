@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Droplet, SquareAsterisk, WashingMachine, Wrench } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -30,7 +31,7 @@ const ServicesPage = () => {
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Droplet className="h-8 w-8 text-brand-blue" />
               </div>
-              <h2 className="text-3xl font-bold mb-4 text-black">Desentupimento de Pia</h2>
+              <h2 className="text-3xl font-bold mb-4 text-on-white">Desentupimento de Pia</h2>
               <p className="text-lg text-on-white mb-4">
                 Oferecemos serviço especializado para desentupimento de pias de cozinha, banheiro e áreas de serviço. Nossos profissionais utilizam equipamentos modernos para garantir a desobstrução completa sem danificar suas instalações.
               </p>
@@ -90,8 +91,8 @@ const ServicesPage = () => {
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <SquareAsterisk className="h-8 w-8 text-brand-blue" />
               </div>
-              <h2 className="text-3xl font-bold mb-4 text-black">Desentupimento de Vaso Sanitário</h2>
-              <p className="text-lg text-on-white mb-4">
+              <h2 className="text-3xl font-bold mb-4 text-on-dark">Desentupimento de Vaso Sanitário</h2>
+              <p className="text-lg text-on-dark mb-4">
                 Resolvemos rapidamente entupimentos em vasos sanitários e bacias, utilizando técnicas eficientes e equipamentos específicos para cada tipo de obstrução, garantindo um serviço higiênico e sem danos à louça sanitária.
               </p>
               <ul className="space-y-2 mb-6">
@@ -100,28 +101,28 @@ const ServicesPage = () => {
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span className="text-on-white">Desobstrução completa de vasos sanitários</span>
+                  <span className="text-on-dark">Desobstrução completa de vasos sanitários</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span className="text-on-white">Remoção de objetos estranhos sem quebrar a louça</span>
+                  <span className="text-on-dark">Remoção de objetos estranhos sem quebrar a louça</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span className="text-on-white">Uso de equipamento especializado para entupimentos severos</span>
+                  <span className="text-on-dark">Uso de equipamento especializado para entupimentos severos</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span className="text-on-white">Higienização completa após o serviço</span>
+                  <span className="text-on-dark">Higienização completa após o serviço</span>
                 </li>
               </ul>
               <WhatsAppButton neighborhood="Ipiranga" className="mt-4">
@@ -140,7 +141,7 @@ const ServicesPage = () => {
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <WashingMachine className="h-8 w-8 text-brand-blue" />
               </div>
-              <h2 className="text-3xl font-bold mb-4 text-black">Desentupimento de Ralo</h2>
+              <h2 className="text-3xl font-bold mb-4 text-on-white">Desentupimento de Ralo</h2>
               <p className="text-lg text-on-white mb-4">
                 Desobstruímos ralos de banheiro, box, áreas externas, caixas de gordura e sistemas de esgoto com equipamentos especializados, devolvendo o perfeito escoamento da água e prevenindo problemas maiores.
               </p>
@@ -191,8 +192,8 @@ const ServicesPage = () => {
       <section className="section bg-brand-lightGray">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Outros Serviços</h2>
-            <p className="text-lg text-brand-gray max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4 text-on-dark">Outros Serviços</h2>
+            <p className="text-lg text-on-dark max-w-2xl mx-auto">
               Além dos serviços principais de desentupimento, também oferecemos:
             </p>
           </div>
@@ -203,7 +204,7 @@ const ServicesPage = () => {
                 <div className="bg-brand-blue/10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                   <Wrench className="h-6 w-6 text-brand-blue" />
                 </div>
-                <h3 className="text-xl font-semibold text-black">Limpeza de Caixas d'Água</h3>
+                <h3 className="text-xl font-semibold text-on-white">Limpeza de Caixas d'Água</h3>
               </div>
               <p className="text-on-white">
                 Realizamos limpeza e higienização completa de caixas d'água residenciais e comerciais, seguindo todas as normas sanitárias.
@@ -215,7 +216,7 @@ const ServicesPage = () => {
                 <div className="bg-brand-blue/10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                   <Wrench className="h-6 w-6 text-brand-blue" />
                 </div>
-                <h3 className="text-xl font-semibold text-black">Manutenção Hidráulica</h3>
+                <h3 className="text-xl font-semibold text-on-white">Manutenção Hidráulica</h3>
               </div>
               <p className="text-on-white">
                 Consertos e reparos em vazamentos, troca de registros, válvulas, torneiras e tubulações com qualidade e garantia.
@@ -250,3 +251,4 @@ const ServicesPage = () => {
 };
 
 export default ServicesPage;
+
