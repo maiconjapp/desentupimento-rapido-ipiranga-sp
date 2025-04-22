@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, MapPin } from 'lucide-react';
+import { Phone, MapPin, Instagram } from 'lucide-react';
+
 const Footer = () => {
   const neighborhoods = ["Ipiranga", "Vila Mariana", "Sacomã", "Cursino", "Cambuci", "Aclimação", "Bosque da Saúde", "Vila da Saúde"];
   return <footer className="bg-brand-blue text-white">
@@ -54,19 +55,18 @@ const Footer = () => {
                   Site Oficial
                 </a>
               </li>
+              <li>
+                <a 
+                  href="https://www.instagram.com/magnavita_marido_de_aluguel/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center text-brand-orange hover:text-orange-600 transition-colors"
+                >
+                  <Instagram className="h-5 w-5 mr-2" />
+                  Instagram
+                </a>
+              </li>
             </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-bold text-white mb-4">Bairros Atendidos</h3>
-            <div className="grid grid-cols-2 gap-2 bg-brand-black">
-              {neighborhoods.map(neighborhood => <Link key={neighborhood} to={`/bairros/${neighborhood.toLowerCase().replace(/\s+/g, '-')}`} className="text-brand-orange hover:text-orange-600 transition-colors">
-                  {neighborhood}
-                </Link>)}
-              <Link to="/bairros" className="col-span-2 mt-2 text-brand-orange hover:underline">
-                Ver todos os bairros →
-              </Link>
-            </div>
           </div>
         </div>
         
