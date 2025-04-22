@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowDown, Droplet, SquareAsterisk, WashingMachine } from 'lucide-react';
@@ -16,25 +15,25 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="hero-section">
+      <section className="hero-section bg-white">
         <div className="container-custom flex flex-col items-center text-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-black mb-4">
             Desentupimento Rápido em SP
           </h1>
-          <h2 className="text-xl md:text-2xl mb-6 text-white font-normal">
+          <h2 className="text-xl md:text-2xl mb-6 text-black font-normal">
             Pia, vaso ou ralo entupido? <br className="md:hidden" />
             Chame a Magnavita Marido de Aluguel e resolva agora!
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <WhatsAppButton className="text-lg" />
-            <Button asChild variant="outline" className="text-white border-white hover:bg-white hover:text-brand-blue text-lg">
+            <Button asChild variant="outline" className="text-black border-black hover:bg-black hover:text-white text-lg">
               <a href="tel:+5511977480538">
                 Ligar Agora
               </a>
             </Button>
           </div>
           <div className="mt-12 animate-bounce">
-            <ArrowDown className="h-8 w-8 text-white" />
+            <ArrowDown className="h-8 w-8 text-black" />
           </div>
         </div>
       </section>
