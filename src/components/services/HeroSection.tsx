@@ -10,10 +10,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description }) => {
   return (
     <section className="hero-section">
       <div className="container-custom text-center">
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-black mb-4">
           {title}
         </h1>
-        <p className="text-xl text-white max-w-3xl mx-auto">
+        <p className="text-xl text-black max-w-3xl mx-auto">
           {description}
         </p>
       </div>
