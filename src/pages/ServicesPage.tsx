@@ -221,18 +221,6 @@ const ServicesPage = () => {
                 Consertos e reparos em vazamentos, troca de registros, válvulas, torneiras e tubulações com qualidade e garantia.
               </p>
             </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="flex items-center mb-4">
-                <div className="bg-brand-blue/10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                  <Wrench className="h-6 w-6 text-brand-blue" />
-                </div>
-                <h3 className="text-xl font-semibold">Inspeção por Câmera</h3>
-              </div>
-              <p className="text-brand-gray">
-                Utilizamos câmeras de inspeção para localizar problemas em tubulações sem necessidade de quebra de paredes ou pisos.
-              </p>
-            </div>
           </div>
         </div>
       </section>
