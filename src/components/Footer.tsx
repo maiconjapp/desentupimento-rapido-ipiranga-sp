@@ -4,8 +4,8 @@ import { Phone, MapPin } from 'lucide-react';
 const Footer = () => {
   const neighborhoods = ["Ipiranga", "Vila Mariana", "Sacomã", "Cursino", "Cambuci", "Aclimação", "Bosque da Saúde", "Vila da Saúde"];
   return <footer className="bg-brand-blue text-white">
-      <div className="container-custom py-12 bg-slate-950">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container-custom py-12 bg-slate-50">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 bg-brand-black">
           <div>
             <h3 className="text-xl font-bold text-brand-orange mb-4">Magnavita Marido de Aluguel</h3>
             <p className="text-brand-orange mb-4">
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-blue-700 mt-8 pt-6 text-sm text-center md:text-left md:flex md:justify-between">
+        <div className="border-t border-blue-700 mt-8 pt-6 text-sm text-center md:text-left md:flex md:justify-between bg-brand-black">
           <p className="text-brand-orange">© 2025 Magnavita Marido de Aluguel. Todos os direitos reservados.</p>
           <p className="mt-2 md:mt-0">
             <a href="https://magnavitamaridodealuguel.com/pt" target="_blank" rel="noopener noreferrer" className="text-brand-orange underline hover:text-orange-600 transition-colors">

@@ -1,8 +1,8 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import WhatsAppButton from "@/components/WhatsAppButton";
-const CTASection = () => <section className="section bg-brand-blue text-white bg-[#0a0700] rounded-sm">
-    <div className="container-custom text-center">
+const CTASection = () => <section className="section bg-brand-blue text-white rounded-sm bg-brand-black">
+    <div className="container-custom text-center bg-brand-black">
       <h2 className="text-3xl font-bold mb-4">Precisa de Desentupimento Urgente?</h2>
       <p className="text-xl mb-8 max-w-2xl mx-auto">
         Entre em contato agora mesmo para uma solução rápida e eficiente para o seu problema.
