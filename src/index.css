@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -56,6 +55,10 @@
   }
   .text-gray-300, .text-gray-400, .text-gray-500, .text-brand-gray {
     color: #e8e8e8 !important;
+  }
+  
+  a:not(.text-brand-orange) {
+    color: #ffa546 !important;
   }
 }
 
@@ -225,4 +228,3 @@ a:hover, a:focus {
   background: #ffe8c4;
   border-radius: 6px;
 }
-

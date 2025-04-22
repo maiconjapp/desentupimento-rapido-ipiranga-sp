@@ -13,15 +13,15 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, link }) => {
   return (
-    <Card className="h-full flex flex-col hover:shadow-lg transition-shadow bg-gray-800 border-gray-700">
+    <Card className="h-full flex flex-col hover:shadow-lg transition-shadow bg-white border-gray-200">
       <CardHeader>
         <div className="flex justify-center mb-4 text-brand-orange">
           {icon}
         </div>
-        <CardTitle className="text-center text-white text-xl">{title}</CardTitle>
+        <CardTitle className="text-center text-black text-xl">{title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <CardDescription className="text-center text-gray-300">
+        <CardDescription className="text-center text-gray-700">
           {description}
         </CardDescription>
       </CardContent>
