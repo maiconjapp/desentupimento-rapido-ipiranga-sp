@@ -14,7 +14,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply text-white font-semibold; /* Ensure headings are white but keep font weight */
+    @apply text-white font-semibold;
   }
 }
 
@@ -31,42 +31,42 @@
     @apply bg-black text-white container px-4 md:px-6 mx-auto max-w-7xl;
   }
 
-  /* Restore gradient background option for hero sections */
   .hero-section-gradient {
     @apply relative bg-gradient-to-br from-brand-orange to-brand-black text-white py-16 md:py-24;
   }
 
-  /* Forçar texto preto nas caixas/camadas brancas */
-  .text-on-white,
-  .bg-white .text-brand-gray,
-  .bg-white .text-gray-300,
-  .bg-white .text-gray-400,
-  .bg-white .text-gray-500 {
-    color: #111 !important;
+  /* Improved text visibility for dark backgrounds */
+  .dark-section-text {
+    @apply text-gray-200 hover:text-white transition-colors;
+  }
+
+  .dark-section-muted {
+    @apply text-gray-400 hover:text-gray-200 transition-colors;
   }
 }
 
-/* Ensure links and interactive elements have good contrast */
+/* Ensure links have good contrast */
 a {
-  @apply text-white hover:text-brand-orange transition-colors;
+  @apply text-brand-orange hover:text-white transition-colors;
 }
 
-/* Additional contrast improvements */
 .text-muted-foreground {
   @apply text-gray-300;
 }
 
-/* Restore text colors for specific components */
 .text-brand-gray {
   @apply text-gray-300;
 }
 
-/* Make card backgrounds dark with proper text contrast */
 .bg-brand-lightGray {
   @apply bg-gray-800;
 }
 
-/* Utilidade extra para texto preto em fundo branco */
+/* Utility for text contrast */
+.text-on-dark {
+  color: #f1f1f1 !important;
+}
+
 .text-on-white {
   color: #111 !important;
 }
