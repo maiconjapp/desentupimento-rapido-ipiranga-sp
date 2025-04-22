@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -23,41 +22,37 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        background: '#000000', // Pure black background
+        foreground: '#FFFFFF', // Pure white text
         primary: {
           DEFAULT: '#ff7e00', // Orange from logo
-          foreground: '#fff'
+          foreground: '#FFFFFF'
         },
         secondary: {
           DEFAULT: '#0c8b45', // Green from logo
-          foreground: '#fff'
+          foreground: '#FFFFFF'
         },
         destructive: {
           DEFAULT: '#ea384c', // Red from logo
-          foreground: '#fff'
+          foreground: '#FFFFFF'
         },
         muted: {
-          DEFAULT: '#222', // Black from logo
-          foreground: '#eee'
+          DEFAULT: '#222', // Dark gray
+          foreground: '#FFFFFF'
         },
         accent: {
           DEFAULT: '#FFD600', // Yellow accent
-          foreground: '#222'
-        },
-        popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))'
+          foreground: '#000000'
         },
         card: {
-          DEFAULT: '#fff',
-          foreground: '#222'
+          DEFAULT: '#000000', // Black
+          foreground: '#FFFFFF' // White
         },
         brand: {
           orange: '#ff7e00',
           green: '#0c8b45',
           red: '#ea384c',
-          black: '#222',
+          black: '#000000',
           yellow: '#FFD600'
         }
       },
@@ -84,4 +79,3 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-
