@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import WhatsAppButton from '@/components/WhatsAppButton';
 const CTASection = () => {
-  return <section className="section bg-brand-blue text-white bg-slate-950">
+  return <section className="section bg-brand-blue text-white bg-brand-black">
       <div className="container-custom text-center">
         <h2 className="text-3xl font-bold mb-4 text-white">Precisa de um Orçamento?</h2>
         <p className="text-xl mb-8 max-w-2xl mx-auto text-white">
