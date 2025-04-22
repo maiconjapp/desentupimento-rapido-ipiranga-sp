@@ -53,7 +53,7 @@ const NeighborhoodsListPage = () => {
           
           <div className="bg-brand-orange text-white p-8 rounded-lg text-center">
             <h3 className="text-2xl font-bold mb-4">Não encontrou seu bairro?</h3>
-            <p className="text-lg mb-6">
+            <p className="text-lg mb-6 text-white">
               Entre em contato conosco para verificar a disponibilidade de atendimento na sua região.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
