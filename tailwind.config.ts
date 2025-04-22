@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -27,7 +26,7 @@ export default {
         foreground: '#000000', // Black text
         primary: {
           DEFAULT: '#ff7e00', 
-          foreground: '#000000'
+          foreground: '#000000' // Black text on primary backgrounds
         },
         secondary: {
           DEFAULT: '#0c8b45', 
@@ -80,4 +79,3 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-
