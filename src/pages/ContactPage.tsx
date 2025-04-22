@@ -11,14 +11,32 @@ const ContactPage = () => {
   return (
     <>
       <Header />
-      
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="container-custom text-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-black mb-4">
+
+      {/* Hero Image Section */}
+      <section className="relative h-[300px] md:h-[360px] w-full flex items-center justify-center overflow-hidden mb-[-30px]">
+        {/* Main image with transparency and filter */}
+        <img
+          src="https://i.ibb.co/hRxPtLZj/desentupimento-de-pia-sp.jpg"
+          alt="Desentupimento de pia em SP"
+          className="absolute inset-0 w-full h-full object-cover opacity-35"
+          style={{
+            filter: 'blur(1.5px) grayscale(5%) brightness(0.96)'
+          }}
+        />
+        {/* Second smaller image, blurred and right aligned, optional: decorativo */}
+        <img
+          src="https://i.ibb.co/gZvPF12r/desentupimento-de-ralo-sp.jpg"
+          alt="Desentupimento de ralo em SP"
+          className="hidden md:block absolute bottom-0 right-0 w-52 h-40 object-cover rounded-lg opacity-50 blur-sm pointer-events-none"
+        />
+        {/* Overlay gradient for better contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/50 to-white/10"></div>
+        {/* Title content */}
+        <div className="relative z-10 w-full text-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-black mb-4 drop-shadow-lg">
             Entre em Contato
           </h1>
-          <p className="text-xl text-black max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto drop-shadow">
             Estamos prontos para atender sua emergência de desentupimento no Ipiranga e Zona Sul de São Paulo.
           </p>
         </div>
