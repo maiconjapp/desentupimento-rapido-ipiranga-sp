@@ -6,7 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 const HeroSection = () => (
   <section className="hero-section bg-white relative overflow-hidden">
-    {/* Imagem de fundo translúcida */}
+    {/* Imagem de fundo translúcida com filtro */}
     <div 
       className="absolute inset-0 w-full h-full z-0"
       aria-hidden="true"
@@ -17,6 +17,7 @@ const HeroSection = () => (
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
+        filter: 'grayscale(30%) sepia(20%) brightness(90%)', // Added filter effect
       }}
     />
     {/* Conteúdo principal acima da imagem */}
