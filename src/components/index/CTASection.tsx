@@ -1,10 +1,7 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import WhatsAppButton from "@/components/WhatsAppButton";
-
-const CTASection = () => (
-  <section className="section bg-brand-blue text-white">
+const CTASection = () => <section className="section bg-brand-blue text-white bg-[#0a0700] rounded-sm">
     <div className="container-custom text-center">
       <h2 className="text-3xl font-bold mb-4">Precisa de Desentupimento Urgente?</h2>
       <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -19,7 +16,5 @@ const CTASection = () => (
         </Button>
       </div>
     </div>
-  </section>
-);
-
+  </section>;
 export default CTASection;
