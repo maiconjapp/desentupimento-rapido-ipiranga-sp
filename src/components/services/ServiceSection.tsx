@@ -1,6 +1,7 @@
 
 import React from 'react';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import { AspectRatio } from '../ui/aspect-ratio';
 
 interface ServiceSectionProps {
   id: string;
@@ -55,15 +56,30 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
               {actionText}
             </WhatsAppButton>
           </div>
-          <div className="md:w-1/2 bg-gray-100 h-64 md:h-80 rounded-lg flex items-center justify-center overflow-hidden">
+          <div className="md:w-1/2 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden w-full">
             {image ? (
-              <img
-                src={image}
-                alt={title}
-                className="object-cover w-full h-full"
-                style={{ maxHeight: 320, borderRadius: '0.5rem' }}
-                loading="lazy"
-              />
+              // Usa AspectRatio para formato 4:3 no mobile, altura padrão em desktop
+              <>
+                <div className="block md:hidden w-full">
+                  <AspectRatio ratio={4 / 3}>
+                    <img
+                      src={image}
+                      alt={title}
+                      className="object-cover w-full h-full rounded-lg"
+                      loading="lazy"
+                    />
+                  </AspectRatio>
+                </div>
+                <div className="hidden md:flex w-full h-64 md:h-80">
+                  <img
+                    src={image}
+                    alt={title}
+                    className="object-cover w-full h-full rounded-lg"
+                    style={{ maxHeight: 320 }}
+                    loading="lazy"
+                  />
+                </div>
+              </>
             ) : (
               <div className="text-9xl text-brand-blue">
                 {icon}
@@ -77,3 +93,4 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
 };
 
 export default ServiceSection;
+
