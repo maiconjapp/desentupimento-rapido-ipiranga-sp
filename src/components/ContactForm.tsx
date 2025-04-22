@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 const ContactForm = () => {
@@ -29,7 +30,7 @@ const ContactForm = () => {
           id="nome"
           value={nome}
           onChange={e => setNome(e.target.value)}
-          className="w-full border rounded p-2"
+          className="w-full border border-gray-700 bg-gray-800 rounded p-2 text-white"
           required
         />
       </div>
@@ -40,7 +41,7 @@ const ContactForm = () => {
           id="telefone"
           value={telefone}
           onChange={e => setTelefone(e.target.value)}
-          className="w-full border rounded p-2"
+          className="w-full border border-gray-700 bg-gray-800 rounded p-2 text-white"
           required
         />
       </div>
@@ -50,7 +51,7 @@ const ContactForm = () => {
           id="mensagem"
           value={mensagem}
           onChange={e => setMensagem(e.target.value)}
-          className="w-full border rounded p-2"
+          className="w-full border border-gray-700 bg-gray-800 rounded p-2 text-white"
           rows={4}
           required
         />

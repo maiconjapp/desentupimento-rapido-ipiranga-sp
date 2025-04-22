@@ -12,12 +12,12 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-black shadow-md sticky top-0 z-50 border-b border-gray-800">
       <div className="container-custom flex justify-between items-center py-4">
         <Link to="/" className="flex items-center">
           <h1 className="text-xl md:text-2xl font-bold">
-            <span className="text-brand-blue">Magnavita</span>{" "}
-            <span className="text-brand-gray text-sm md:text-base">Marido de Aluguel</span>
+            <span className="text-brand-orange">Magnavita</span>{" "}
+            <span className="text-white text-sm md:text-base">Marido de Aluguel</span>
           </h1>
         </Link>
 
@@ -25,49 +25,49 @@ const Header = () => {
           <nav>
             <ul className="flex space-x-6">
               <li>
-                <Link to="/" className="text-brand-gray hover:text-brand-blue transition-colors">
+                <Link to="/" className="text-white hover:text-brand-orange transition-colors">
                   Início
                 </Link>
               </li>
               <li>
-                <Link to="/servicos" className="text-brand-gray hover:text-brand-blue transition-colors">
+                <Link to="/servicos" className="text-white hover:text-brand-orange transition-colors">
                   Serviços
                 </Link>
               </li>
               <li>
-                <Link to="/sobre" className="text-brand-gray hover:text-brand-blue transition-colors">
+                <Link to="/sobre" className="text-white hover:text-brand-orange transition-colors">
                   Sobre
                 </Link>
               </li>
               <li>
-                <Link to="/contato" className="text-brand-gray hover:text-brand-blue transition-colors">
+                <Link to="/contato" className="text-white hover:text-brand-orange transition-colors">
                   Contato
                 </Link>
               </li>
             </ul>
           </nav>
           
-          <a href="tel:+5511977480538" className="flex items-center text-brand-blue hover:text-brand-orange transition-colors">
+          <a href="tel:+5511977480538" className="flex items-center text-brand-orange hover:text-white transition-colors">
             <Phone className="h-5 w-5 mr-2" />
             <span className="font-medium">(11) 97748-0538</span>
           </a>
         </div>
 
         <div className="md:hidden flex items-center">
-          <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Menu">
+          <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Menu" className="text-white">
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-black border-t border-gray-800">
           <nav className="container-custom py-4">
             <ul className="space-y-4">
               <li>
                 <Link 
                   to="/" 
-                  className="block text-brand-gray hover:text-brand-blue transition-colors"
+                  className="block text-white hover:text-brand-orange transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Início
@@ -76,7 +76,7 @@ const Header = () => {
               <li>
                 <Link 
                   to="/servicos" 
-                  className="block text-brand-gray hover:text-brand-blue transition-colors"
+                  className="block text-white hover:text-brand-orange transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Serviços
@@ -85,7 +85,7 @@ const Header = () => {
               <li>
                 <Link 
                   to="/sobre" 
-                  className="block text-brand-gray hover:text-brand-blue transition-colors"
+                  className="block text-white hover:text-brand-orange transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Sobre
@@ -94,7 +94,7 @@ const Header = () => {
               <li>
                 <Link 
                   to="/contato" 
-                  className="block text-brand-gray hover:text-brand-blue transition-colors"
+                  className="block text-white hover:text-brand-orange transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Contato
@@ -103,7 +103,7 @@ const Header = () => {
               <li>
                 <a 
                   href="tel:+5511977480538" 
-                  className="flex items-center text-brand-blue hover:text-brand-orange transition-colors"
+                  className="flex items-center text-brand-orange hover:text-white transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <Phone className="h-5 w-5 mr-2" />

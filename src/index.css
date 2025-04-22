@@ -14,13 +14,13 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply text-white; /* Ensure headings are white */
+    @apply text-white font-semibold; /* Ensure headings are white but keep font weight */
   }
 }
 
 @layer components {
   .hero-section {
-    @apply bg-black text-white;
+    @apply bg-black text-white relative py-16 md:py-24;
   }
 
   .section {
@@ -29,6 +29,11 @@
 
   .container-custom {
     @apply bg-black text-white container px-4 md:px-6 mx-auto max-w-7xl;
+  }
+
+  /* Restore gradient background option for hero sections */
+  .hero-section-gradient {
+    @apply relative bg-gradient-to-br from-brand-orange to-brand-black text-white py-16 md:py-24;
   }
 }
 
@@ -40,4 +45,14 @@ a {
 /* Additional contrast improvements */
 .text-muted-foreground {
   @apply text-gray-300;
+}
+
+/* Restore text colors for specific components */
+.text-brand-gray {
+  @apply text-gray-300;
+}
+
+/* Make card backgrounds dark with proper text contrast */
+.bg-brand-lightGray {
+  @apply bg-gray-800;
 }

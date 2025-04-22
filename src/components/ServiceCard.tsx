@@ -13,20 +13,20 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, link }) => {
   return (
-    <Card className="h-full flex flex-col hover:shadow-lg transition-shadow">
+    <Card className="h-full flex flex-col hover:shadow-lg transition-shadow bg-gray-800 border-gray-700">
       <CardHeader>
-        <div className="flex justify-center mb-4 text-brand-blue">
+        <div className="flex justify-center mb-4 text-brand-orange">
           {icon}
         </div>
-        <CardTitle className="text-center text-xl">{title}</CardTitle>
+        <CardTitle className="text-center text-xl text-white">{title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <CardDescription className="text-center text-brand-gray">
+        <CardDescription className="text-center text-gray-300">
           {description}
         </CardDescription>
       </CardContent>
       <CardFooter className="justify-center pt-4">
-        <Button asChild>
+        <Button asChild className="bg-brand-orange hover:bg-orange-600">
           <Link to={link}>Saiba mais</Link>
         </Button>
       </CardFooter>
