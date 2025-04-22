@@ -30,8 +30,8 @@ const ServicesPage = () => {
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Droplet className="h-8 w-8 text-brand-blue" />
               </div>
-              <h2 className="text-3xl font-bold mb-4">Desentupimento de Pia</h2>
-              <p className="text-lg text-brand-gray mb-4">
+              <h2 className="text-3xl font-bold mb-4 text-black">Desentupimento de Pia</h2>
+              <p className="text-lg text-on-white mb-4">
                 Oferecemos serviço especializado para desentupimento de pias de cozinha, banheiro e áreas de serviço. Nossos profissionais utilizam equipamentos modernos para garantir a desobstrução completa sem danificar suas instalações.
               </p>
               <ul className="space-y-2 mb-6">
@@ -40,28 +40,28 @@ const ServicesPage = () => {
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Desentupimento de pias de cozinha com acúmulo de gordura</span>
+                  <span className="text-on-white">Desentupimento de pias de cozinha com acúmulo de gordura</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Eliminação de obstruções em sifões e tubulações</span>
+                  <span className="text-on-white">Eliminação de obstruções em sifões e tubulações</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Limpeza de pias com máquina desentupidora profissional</span>
+                  <span className="text-on-white">Limpeza de pias com máquina desentupidora profissional</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Prevenção de novos entupimentos e orientações</span>
+                  <span className="text-on-white">Prevenção de novos entupimentos e orientações</span>
                 </li>
               </ul>
               <WhatsAppButton neighborhood="Ipiranga" className="mt-4">
@@ -90,8 +90,8 @@ const ServicesPage = () => {
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <SquareAsterisk className="h-8 w-8 text-brand-blue" />
               </div>
-              <h2 className="text-3xl font-bold mb-4">Desentupimento de Vaso Sanitário</h2>
-              <p className="text-lg text-brand-gray mb-4">
+              <h2 className="text-3xl font-bold mb-4 text-black">Desentupimento de Vaso Sanitário</h2>
+              <p className="text-lg text-on-white mb-4">
                 Resolvemos rapidamente entupimentos em vasos sanitários e bacias, utilizando técnicas eficientes e equipamentos específicos para cada tipo de obstrução, garantindo um serviço higiênico e sem danos à louça sanitária.
               </p>
               <ul className="space-y-2 mb-6">
@@ -100,28 +100,28 @@ const ServicesPage = () => {
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Desobstrução completa de vasos sanitários</span>
+                  <span className="text-on-white">Desobstrução completa de vasos sanitários</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Remoção de objetos estranhos sem quebrar a louça</span>
+                  <span className="text-on-white">Remoção de objetos estranhos sem quebrar a louça</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Uso de equipamento especializado para entupimentos severos</span>
+                  <span className="text-on-white">Uso de equipamento especializado para entupimentos severos</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Higienização completa após o serviço</span>
+                  <span className="text-on-white">Higienização completa após o serviço</span>
                 </li>
               </ul>
               <WhatsAppButton neighborhood="Ipiranga" className="mt-4">
@@ -140,8 +140,8 @@ const ServicesPage = () => {
               <div className="bg-brand-blue/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <WashingMachine className="h-8 w-8 text-brand-blue" />
               </div>
-              <h2 className="text-3xl font-bold mb-4">Desentupimento de Ralo</h2>
-              <p className="text-lg text-brand-gray mb-4">
+              <h2 className="text-3xl font-bold mb-4 text-black">Desentupimento de Ralo</h2>
+              <p className="text-lg text-on-white mb-4">
                 Desobstruímos ralos de banheiro, box, áreas externas, caixas de gordura e sistemas de esgoto com equipamentos especializados, devolvendo o perfeito escoamento da água e prevenindo problemas maiores.
               </p>
               <ul className="space-y-2 mb-6">
@@ -150,28 +150,28 @@ const ServicesPage = () => {
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Desentupimento de ralos de banheiros e box</span>
+                  <span className="text-on-white">Desentupimento de ralos de banheiros e box</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Limpeza de caixas de gordura e sifonadas</span>
+                  <span className="text-on-white">Limpeza de caixas de gordura e sifonadas</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Desobstrução de tubulações de esgoto</span>
+                  <span className="text-on-white">Desobstrução de tubulações de esgoto</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-blue mr-2 mt-1">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span>Tratamento preventivo contra novos entupimentos</span>
+                  <span className="text-on-white">Tratamento preventivo contra novos entupimentos</span>
                 </li>
               </ul>
               <WhatsAppButton neighborhood="Ipiranga" className="mt-4">
@@ -203,9 +203,9 @@ const ServicesPage = () => {
                 <div className="bg-brand-blue/10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                   <Wrench className="h-6 w-6 text-brand-blue" />
                 </div>
-                <h3 className="text-xl font-semibold">Limpeza de Caixas d'Água</h3>
+                <h3 className="text-xl font-semibold text-black">Limpeza de Caixas d'Água</h3>
               </div>
-              <p className="text-brand-gray">
+              <p className="text-on-white">
                 Realizamos limpeza e higienização completa de caixas d'água residenciais e comerciais, seguindo todas as normas sanitárias.
               </p>
             </div>
@@ -215,9 +215,9 @@ const ServicesPage = () => {
                 <div className="bg-brand-blue/10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                   <Wrench className="h-6 w-6 text-brand-blue" />
                 </div>
-                <h3 className="text-xl font-semibold">Manutenção Hidráulica</h3>
+                <h3 className="text-xl font-semibold text-black">Manutenção Hidráulica</h3>
               </div>
-              <p className="text-brand-gray">
+              <p className="text-on-white">
                 Consertos e reparos em vazamentos, troca de registros, válvulas, torneiras e tubulações com qualidade e garantia.
               </p>
             </div>

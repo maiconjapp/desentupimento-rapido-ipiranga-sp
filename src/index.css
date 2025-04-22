@@ -35,6 +35,15 @@
   .hero-section-gradient {
     @apply relative bg-gradient-to-br from-brand-orange to-brand-black text-white py-16 md:py-24;
   }
+
+  /* Forçar texto preto nas caixas/camadas brancas */
+  .text-on-white,
+  .bg-white .text-brand-gray,
+  .bg-white .text-gray-300,
+  .bg-white .text-gray-400,
+  .bg-white .text-gray-500 {
+    color: #111 !important;
+  }
 }
 
 /* Ensure links and interactive elements have good contrast */
@@ -55,4 +64,9 @@ a {
 /* Make card backgrounds dark with proper text contrast */
 .bg-brand-lightGray {
   @apply bg-gray-800;
+}
+
+/* Utilidade extra para texto preto em fundo branco */
+.text-on-white {
+  color: #111 !important;
 }

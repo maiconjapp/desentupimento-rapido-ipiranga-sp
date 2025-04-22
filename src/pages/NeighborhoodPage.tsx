@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -72,24 +71,24 @@ const NeighborhoodPage: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-12">
             {/* Main Content */}
             <div className="md:w-2/3">
-              <h2 className="text-2xl font-bold mb-4">Desentupimento Rápido em {neighborhoodName}</h2>
+              <h2 className="text-2xl font-bold mb-4 text-black">Desentupimento Rápido em {neighborhoodName}</h2>
               
-              <p className="text-lg text-brand-gray mb-6">
+              <p className="text-lg text-on-white mb-6">
                 A Magnavita Marido de Aluguel oferece serviços especializados de desentupimento em {neighborhoodName}, com atendimento rápido e eficiente para residências e comércios da região.
               </p>
               
-              <p className="text-lg text-brand-gray mb-6">
+              <p className="text-lg text-on-white mb-6">
                 Nossos profissionais são treinados para resolver qualquer tipo de entupimento, utilizando equipamentos modernos e técnicas avançadas que garantem a solução definitiva do problema sem causar danos às suas instalações.
               </p>
               
-              <h3 className="text-xl font-semibold mb-3">Serviços de Desentupimento em {neighborhoodName}:</h3>
+              <h3 className="text-xl font-semibold mb-3 text-black">Serviços de Desentupimento em {neighborhoodName}:</h3>
               
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
                 <div className="bg-brand-lightGray p-6 rounded-lg">
                   <div className="flex justify-center mb-4">
                     <Droplet className="h-10 w-10 text-brand-blue" />
                   </div>
-                  <h4 className="text-lg font-semibold mb-2 text-center">Desentupimento de Pia</h4>
+                  <h4 className="text-lg font-semibold mb-2 text-center text-white">Desentupimento de Pia</h4>
                   <p className="text-brand-gray text-center">
                     Resolvemos entupimentos em pias de cozinha e banheiro com rapidez e eficiência.
                   </p>
@@ -99,7 +98,7 @@ const NeighborhoodPage: React.FC = () => {
                   <div className="flex justify-center mb-4">
                     <SquareAsterisk className="h-10 w-10 text-brand-blue" />
                   </div>
-                  <h4 className="text-lg font-semibold mb-2 text-center">Desentupimento de Vaso</h4>
+                  <h4 className="text-lg font-semibold mb-2 text-center text-white">Desentupimento de Vaso</h4>
                   <p className="text-brand-gray text-center">
                     Desentupimos vasos sanitários sem quebrar a louça, de forma rápida e higiênica.
                   </p>
@@ -109,14 +108,14 @@ const NeighborhoodPage: React.FC = () => {
                   <div className="flex justify-center mb-4">
                     <WashingMachine className="h-10 w-10 text-brand-blue" />
                   </div>
-                  <h4 className="text-lg font-semibold mb-2 text-center">Desentupimento de Ralo</h4>
+                  <h4 className="text-lg font-semibold mb-2 text-center text-white">Desentupimento de Ralo</h4>
                   <p className="text-brand-gray text-center">
                     Eliminamos entupimentos em ralos de banheiros, box e áreas externas.
                   </p>
                 </div>
               </div>
               
-              <h3 className="text-xl font-semibold mb-3">Por que escolher a Magnavita para desentupimento em {neighborhoodName}?</h3>
+              <h3 className="text-xl font-semibold mb-3 text-black">Por que escolher a Magnavita para desentupimento em {neighborhoodName}?</h3>
               
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
@@ -124,7 +123,7 @@ const NeighborhoodPage: React.FC = () => {
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span className="text-brand-gray">
+                  <span className="text-on-white">
                     <strong>Atendimento rápido em {neighborhoodName}</strong> - Chegamos em até 60 minutos após o seu contato.
                   </span>
                 </li>
@@ -133,7 +132,7 @@ const NeighborhoodPage: React.FC = () => {
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span className="text-brand-gray">
+                  <span className="text-on-white">
                     <strong>Equipamentos modernos</strong> - Utilizamos máquinas desentupidoras profissionais para resolver qualquer tipo de entupimento.
                   </span>
                 </li>
@@ -142,7 +141,7 @@ const NeighborhoodPage: React.FC = () => {
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span className="text-brand-gray">
+                  <span className="text-on-white">
                     <strong>Orçamento transparente</strong> - Sem surpresas ou custos adicionais após o serviço.
                   </span>
                 </li>
@@ -151,7 +150,7 @@ const NeighborhoodPage: React.FC = () => {
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span className="text-brand-gray">
+                  <span className="text-on-white">
                     <strong>Profissionais experientes</strong> - Equipe especializada em desentupimento na região de {neighborhoodName}.
                   </span>
                 </li>
@@ -160,43 +159,43 @@ const NeighborhoodPage: React.FC = () => {
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                     <path d="m9 12 2 2 4-4"/>
                   </svg>
-                  <span className="text-brand-gray">
+                  <span className="text-on-white">
                     <strong>Garantia de serviço</strong> - Nosso trabalho tem garantia para sua total segurança e satisfação.
                   </span>
                 </li>
               </ul>
               
-              <p className="text-lg text-brand-gray mb-6">
+              <p className="text-lg text-on-white mb-6">
                 Atendemos em todo o bairro de {neighborhoodName} e regiões próximas. Entre em contato agora mesmo para resolver seu problema de entupimento com rapidez e qualidade.
               </p>
               
               <div className="bg-brand-lightGray p-6 rounded-lg mb-8">
-                <h3 className="text-xl font-semibold mb-3">Desentupimento em {neighborhoodName} - Perguntas Frequentes</h3>
+                <h3 className="text-xl font-semibold mb-3 text-white">Desentupimento em {neighborhoodName} - Perguntas Frequentes</h3>
                 
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold mb-1">Quanto tempo vocês levam para chegar em {neighborhoodName}?</h4>
+                    <h4 className="font-semibold mb-1 text-white">Quanto tempo vocês levam para chegar em {neighborhoodName}?</h4>
                     <p className="text-brand-gray">Nosso tempo médio de chegada em {neighborhoodName} é de até 60 minutos após o seu contato, dependendo da disponibilidade e tráfego.</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-1">Qual o valor do desentupimento em {neighborhoodName}?</h4>
+                    <h4 className="font-semibold mb-1 text-white">Qual o valor do desentupimento em {neighborhoodName}?</h4>
                     <p className="text-brand-gray">O valor varia de acordo com o tipo e complexidade do serviço. Entre em contato para um orçamento gratuito e sem compromisso.</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-1">Vocês trabalham aos finais de semana em {neighborhoodName}?</h4>
+                    <h4 className="font-semibold mb-1 text-white">Vocês trabalham aos finais de semana em {neighborhoodName}?</h4>
                     <p className="text-brand-gray">Sim, mediante agendamento prévio, atendemos emergências de desentupimento também aos finais de semana.</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold mb-1">Oferecem garantia para desentupimento em {neighborhoodName}?</h4>
+                    <h4 className="font-semibold mb-1 text-white">Oferecem garantia para desentupimento em {neighborhoodName}?</h4>
                     <p className="text-brand-gray">Sim, todos os nossos serviços em {neighborhoodName} contam com garantia, demonstrando a confiança na qualidade do nosso trabalho.</p>
                   </div>
                 </div>
               </div>
               
-              <p className="text-brand-gray mb-6">
+              <p className="text-on-white mb-6">
                 Saiba mais no site oficial da <a href="https://magnavitamaridodealuguel.com/pt" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:text-brand-orange transition-colors">Magnavita Marido de Aluguel</a>.
               </p>
               
