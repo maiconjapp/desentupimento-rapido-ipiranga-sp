@@ -1,17 +1,10 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, MapPin } from 'lucide-react';
-
 const Footer = () => {
-  const neighborhoods = [
-    "Ipiranga", "Vila Mariana", "Sacomã", "Cursino", 
-    "Cambuci", "Aclimação", "Bosque da Saúde", "Vila da Saúde"
-  ];
-
-  return (
-    <footer className="bg-brand-blue text-white">
-      <div className="container-custom py-12">
+  const neighborhoods = ["Ipiranga", "Vila Mariana", "Sacomã", "Cursino", "Cambuci", "Aclimação", "Bosque da Saúde", "Vila da Saúde"];
+  return <footer className="bg-brand-blue text-white">
+      <div className="container-custom py-12 bg-slate-950">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold text-brand-orange mb-4">Magnavita Marido de Aluguel</h3>
@@ -57,12 +50,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a 
-                  href="https://magnavitamaridodealuguel.com/pt" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-brand-orange hover:text-orange-600 transition-colors"
-                >
+                <a href="https://magnavitamaridodealuguel.com/pt" target="_blank" rel="noopener noreferrer" className="text-brand-orange hover:text-orange-600 transition-colors">
                   Site Oficial
                 </a>
               </li>
@@ -72,19 +60,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Bairros Atendidos</h3>
             <div className="grid grid-cols-2 gap-2">
-              {neighborhoods.map((neighborhood) => (
-                <Link 
-                  key={neighborhood}
-                  to={`/bairros/${neighborhood.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="text-brand-orange hover:text-orange-600 transition-colors"
-                >
+              {neighborhoods.map(neighborhood => <Link key={neighborhood} to={`/bairros/${neighborhood.toLowerCase().replace(/\s+/g, '-')}`} className="text-brand-orange hover:text-orange-600 transition-colors">
                   {neighborhood}
-                </Link>
-              ))}
-              <Link 
-                to="/bairros"
-                className="col-span-2 mt-2 text-brand-orange hover:underline"
-              >
+                </Link>)}
+              <Link to="/bairros" className="col-span-2 mt-2 text-brand-orange hover:underline">
                 Ver todos os bairros →
               </Link>
             </div>
@@ -94,19 +73,12 @@ const Footer = () => {
         <div className="border-t border-blue-700 mt-8 pt-6 text-sm text-center md:text-left md:flex md:justify-between">
           <p className="text-brand-orange">© 2025 Magnavita Marido de Aluguel. Todos os direitos reservados.</p>
           <p className="mt-2 md:mt-0">
-            <a 
-              href="https://magnavitamaridodealuguel.com/pt" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-brand-orange underline hover:text-orange-600 transition-colors"
-            >
+            <a href="https://magnavitamaridodealuguel.com/pt" target="_blank" rel="noopener noreferrer" className="text-brand-orange underline hover:text-orange-600 transition-colors">
               magnavitamaridodealuguel.com
             </a>
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
