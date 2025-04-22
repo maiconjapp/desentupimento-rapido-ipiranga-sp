@@ -11,7 +11,7 @@ const Footer = () => {
             <p className="mb-4 text-brand-black">
               Especialistas em desentupimento rápido de pia, vaso e ralo em toda a região do Ipiranga e Zona Sul de SP.
             </p>
-            <div className="flex items-center mb-2">
+            <div className="flex items-center mb-2 bg-brand-black">
               <Phone className="h-5 w-5 mr-2 text-brand-orange" />
               <a href="tel:+5511977480538" className="text-brand-orange hover:text-orange-600 transition-colors">
                 (11) 97748-0538
