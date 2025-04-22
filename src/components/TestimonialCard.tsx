@@ -17,7 +17,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ text, author, locatio
       </CardContent>
       <CardFooter className="flex-col items-start">
         <p className="font-semibold text-white">{author}</p>
-        <p className="text-sm text-gray-400">{location}</p>
+        <p className="text-sm text-gray-300">{location}</p>
       </CardFooter>
     </Card>
   );

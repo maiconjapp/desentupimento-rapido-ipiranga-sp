@@ -70,3 +70,31 @@ a {
 .text-on-white {
   color: #111 !important;
 }
+
+/* Fix for light text on light backgrounds */
+.bg-white .text-gray-300,
+.bg-white .text-gray-400,
+.bg-white .text-muted-foreground,
+.bg-white .text-brand-gray {
+  color: #333 !important;
+}
+
+/* Fix for dark text on dark backgrounds */
+.bg-gray-800 .text-gray-700,
+.bg-gray-800 .text-gray-900,
+.bg-gray-800 .text-black,
+.bg-brand-lightGray .text-gray-700,
+.bg-brand-lightGray .text-gray-900,
+.bg-brand-lightGray .text-black {
+  color: #f1f1f1 !important;
+}
+
+/* Fix card descriptions and content */
+.bg-gray-800 .card-description,
+.bg-brand-lightGray .card-description {
+  color: #e0e0e0 !important;
+}
+
+.bg-white .card-description {
+  color: #333 !important;
+}
