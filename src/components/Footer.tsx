@@ -59,7 +59,7 @@ const Footer = () => {
           
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Bairros Atendidos</h3>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-2 bg-brand-black">
               {neighborhoods.map(neighborhood => <Link key={neighborhood} to={`/bairros/${neighborhood.toLowerCase().replace(/\s+/g, '-')}`} className="text-brand-orange hover:text-orange-600 transition-colors">
                   {neighborhood}
                 </Link>)}
