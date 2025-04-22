@@ -5,8 +5,22 @@ import { Button } from "@/components/ui/button";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const HeroSection = () => (
-  <section className="hero-section bg-white">
-    <div className="container-custom flex flex-col items-center text-center">
+  <section className="hero-section bg-white relative overflow-hidden">
+    {/* Imagem de fundo translúcida */}
+    <div 
+      className="absolute inset-0 w-full h-full z-0"
+      aria-hidden="true"
+      style={{
+        pointerEvents: 'none',
+        opacity: 0.35,
+        backgroundImage: `url('https://i.ibb.co/hRxPtLZj/desentupimento-de-pia-sp.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    />
+    {/* Conteúdo principal acima da imagem */}
+    <div className="container-custom flex flex-col items-center text-center relative z-10">
       <h1 className="text-3xl md:text-5xl font-bold text-black mb-4">
         Desentupimento Rápido em SP
       </h1>
