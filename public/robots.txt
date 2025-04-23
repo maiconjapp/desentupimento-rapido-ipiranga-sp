@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://magnavitamaridodealuguel.com/sitemap.xml
+Sitemap: https://desentupidodoraemipiranga.com.br/sitemap.xml
